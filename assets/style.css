@@ -1,0 +1,54 @@
+header {
+    justify-content: space-around;
+    display: flex;
+    text-align: center; 
+}
+
+h2 {
+    text-align: left;
+    font-size: 25px;
+    color: purple;
+    display: inline-block;
+    
+}
+div {
+    text-align: right;
+    display: inline-block;
+}
+h3 {
+    font-size: 25px;
+    
+}
+
+.container {
+    padding: 80px 80px;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 50px;
+}
+
+section p {
+    font-size: 30px;
+}
+
+#choiceA, #choiceB, #choiceC, #choiceD {
+    display: none;
+}
+
+#gameOver {
+    display: none;
+}
+
+form #submit {
+    display: none;
+}
+button {
+    padding: 10px 30px;
+    background-color: purple;
+    border-radius: 15px 15px 15px 15px;
+    color: white;
+    font-size: 20px;
+}
+

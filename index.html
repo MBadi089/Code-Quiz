@@ -10,23 +10,42 @@
 </head>
 <body>
 <!--------------------------The Header Section of the page---------------------->
-    <header> <h2>View high scores </h2>
-        <div> Time:</div>
+    <header> <h2>View high scores </h2> 
+        <div id="timer">
+            <h3> Time: </h3>
+        </div>
     </header>
 <!----------------------End of The Header Section of the page------------------->
 
 <!----------------------------The Container of the page-------------------------->
 <section class ="container" >
     <h1>Coding Quiz Challenge</h1>
-    <p>Try to answer the following code-related questions within the time limit.
+    <p>Try to answer the following code-related questions within the time limit.<br>
         Keep in mind that incorrect answers will penalize your score/time by ten seconds!
     </p>
-    <button>Start Quiz</button>
-</section>
+    <button id="startQuiz">Start Button</button>
 
+    <!--this will target the questions and  answer choices for the user-->
+    <div class ="questions choices">
+        <button id ="choiceA"></button>
+        <button id ="choiceB"></button>
+        <button id ="choiceC"></button>
+        <button id ="choiceD"></button>
+    </div>
+    <form>
+        <button id = "submit">Submit</button>
+    </form>
+    <!--this will be at the end of the questions-->
+    <div id ="gameOver">
+        <button id="sumbit"></button>
+        <button id="goBack"></button>
+        <button id="clearScore"></button>
+    </div>
+
+</section>
 <!-------------------------End of The Container of the page---------------------->
 
     <!--Calls the Javascript Script-->
     <script src = "./assets/script.js"></script>
 </body>
-</html>
+</html> 
