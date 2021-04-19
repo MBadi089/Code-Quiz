@@ -181,26 +181,28 @@ function gameOver () {
 
 //example for this part of the section
 //localStorage
+var userInitials = document.createElement('div');
+var initialLabel = document.createElement('h1');
+userInitials.clasName = "initails";
 var submitButton = document.querySelector("#submit");
+
 
 //localStorage.setItem()
 submitButton.addEventListener("click", function(event) {
     event.preventDefault();
 
     var userInitials = {
-        initials: usernameElement.value,
+        initials: initials.value,
     }
 
     localStorage.setItem("user", JSON.stringify(user));
 });
 
 //localStorage.getItem()
-var localData = JSON.parse(localStorage.getItem("user"));
-console.log(localData);
+var usersIntials = JSON.parse(localStorage.getItem("user"));
+console.log(userInitials);
 
-usernameElement.value = localData.username;
-emailElement.value = localData.email;
-
+userInitials.value = localData.initials;
 
 }
 //add a function at the end of this block of code ^
